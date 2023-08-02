@@ -1,0 +1,38 @@
+@mixin pc {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+
+@mixin pad {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin padMobile {
+    @media(max-width: 700px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media(max-width: 576px) {
+        @content;
+    }
+}
+
+
+@mixin iphone {
+    @media(max-width: 414px) {
+        @content;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}

@@ -1,0 +1,36 @@
+.groupList {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+
+
+    .active {
+        border-bottom: 12px solid #AA0601 !important;
+    }
+
+    .groupItem {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        /* padding: 24px 150px; */
+
+        &:hover {
+            color: #ffffff !important;
+            background: #AA0601;
+        }
+    }
+}
+
+.card {
+    .card-body .colorItem a {
+        border: 10px solid black;
+        border-radius: 4px;
+    }
+}
+
+@media(max-width:767px) {
+    .groupList {
+        .groupItem {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.groupList {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+
+    .active {
+        border-bottom: 12px solid #AA0601 !important;
+    }
+
+    .groupItem {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 24px;
+        /* padding: 24px 150px; */
+
+        &:hover {
+            color: #ffffff !important;
+            background: #AA0601;
+        }
+    }
+}
+
+.product {
+    display: none;
+}
+
+.product.active {
+    display: block;
+}
+
+.card {
+    .card-body .colorItem a {
+        border: 10px solid black;
+        border-radius: 4px;
+    }
+}
+
+@include iphone() {
+
+    .groupList {
+        .groupItem {
+            font-size: 16px;
+        }
+    }
+
+}

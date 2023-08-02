@@ -1,0 +1,83 @@
+.footer-nav {
+  .navList {
+    li a {
+      color: #ffffff;
+
+      &:hover {
+        border-bottom: 3px solid #ffffff;
+      }
+    }
+
+    @include padMobile() {
+      display: none !important;
+    }
+
+  }
+
+  @include padMobile() {
+    float: right;
+    clear: both;
+  }
+
+  .social .social-link a {
+    img {
+      width: 48px;
+      height: 48px;
+
+      @include pad() {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+
+.footer-bottom {
+  border-top: 1px solid #ffffff;
+
+  .navBottom {
+    gap: 48px;
+
+    a {
+      &:hover {
+        border-bottom: 3px solid #ffffff;
+      }
+    }
+
+    @include mobile() {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  @include mobile() {
+    flex-direction: column;
+  }
+
+}
+
+
+@include mobile() {
+
+  .telephone {
+    .bi-telephone {
+      font-size: 18px;
+    }
+
+    .telText {
+      font-size: 16px;
+    }
+  }
+
+  .envelope {
+    .bi-envelope {
+      font-size: 16px;
+    }
+
+    .envelopeText {
+      font-size: 16px;
+    }
+  }
+
+}

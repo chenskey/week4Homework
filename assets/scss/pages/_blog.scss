@@ -1,0 +1,17 @@
+.blogBarList li a {
+    color: #ffffff;
+
+    &:hover {
+        border-bottom: 3px solid #ffffff;
+    }
+}
+
+@include pad() {
+    .card-body {
+        .card-text {
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

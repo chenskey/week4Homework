@@ -1,0 +1,103 @@
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+
+    @include pad() {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+
+.content {
+    .container {
+        @include pad() {
+            padding-top: 80px;
+        }
+
+        @include mobile() {
+            padding-top: 40px;
+        }
+    }
+}
+
+.breadcrumb {
+    .container {
+        margin-top: 24px;
+    }
+}
+
+.footer {
+    .container {
+        padding-top: 60px;
+
+        @include pad() {
+            padding-top: 24px !important;
+            padding-left: 36px;
+            padding-right: 36px;
+        }
+    }
+}
+
+.navBar {
+    .container {
+        @include pc() {
+            padding-top: 24px;
+            padding-left: 36px;
+            padding-right: 36px;
+        }
+    }
+}
+
+
+
+.product {
+    .container {
+        @include pad() {
+            h1 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+@include mobile() {
+    .branch {
+        .container {
+            h1 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .content {
+        .container {
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+    }
+}
+
+.header,
+.content,
+.classic,
+.fashion,
+.comment,
+.contact,
+.footer {
+    @include mobile() {
+        .container {
+            padding-top: 24px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+    }
+}

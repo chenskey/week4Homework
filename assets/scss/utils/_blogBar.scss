@@ -1,0 +1,28 @@
+.blogBarList {
+    li a {
+        color: #ffffff;
+
+        &:hover {
+            border-bottom: 3px solid #ffffff;
+        }
+    }
+
+    @include mobile() {
+        width: 100%;
+        gap: 21px;
+        justify-content: center !important;
+        font-size: 16px;
+    }
+
+    @include iphone() {
+        gap: 7px;
+    }
+
+}
+
+@include mobile() {
+    .bi-search {
+        display: none;
+    }
+
+}

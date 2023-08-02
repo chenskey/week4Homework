@@ -1,0 +1,58 @@
+.tagsTop a {
+    font-size: 24px;
+
+    @include mobile() {
+        font-size: 16px;
+    }
+}
+
+.blogEventItem {
+    h1 {
+        font-size: 48px;
+
+        @include mobile() {
+            font-size: 24px;
+        }
+    }
+}
+
+.blogSocial {
+    span {
+        margin-right: 16px;
+
+        a img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.tags {
+    span {
+        margin-right: 24px;
+    }
+}
+
+.prevNext {
+    span {
+        i {
+            margin-right: 12px;
+        }
+
+        a {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+
+@include mobile() {
+
+    .blogSocial,
+    .prevNext {
+        display: none !important;
+    }
+}

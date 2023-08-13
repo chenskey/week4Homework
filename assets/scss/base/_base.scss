@@ -2,4 +2,19 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+    object-fit: cover !important;
 }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ::placeholder {
+    color: #C0A4A5 !important;
+} */

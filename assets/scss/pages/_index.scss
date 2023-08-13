@@ -89,20 +89,28 @@
 
 .contact {
   .container {
-    .submit {
-      padding: 16px 176px;
 
-      &:hover {
-        background: #670300;
-      }
+    form {
+      display: flex;
 
-      @include pad() {
-        padding: 16px 136px;
-      }
+      .submit {
+        width: 66.666%;
 
-      @include mobile() {
-        padding: 16px 0;
-        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &:hover {
+          background: #670300;
+        }
+
+        @include pad() {
+          padding: 16px 136px;
+        }
+
+        @include mobile() {
+          padding: 16px 0;
+          width: 100%;
+        }
       }
     }
 

@@ -167,21 +167,24 @@
         <div class="container ptb80 flex-column align-center">
             <h2 class="fz48 mb48 text-center text-darkRed bold900">聯絡我們</h2>
             <p class="fz20 mb24">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。 </p>
-            <form action="" class="w-50 flex-column">
-                <span class="fz16 mb8">姓名</span>
-                <input type="text" name="" id="" class="name fz16 mb16 ptb6 pl12 bg-lightRed" placeholder="陳小明">
-                <span class="fz16 mb8">聯絡電話</span>
-                <input type="text" name="" id="" class="phone fz16 mb16 ptb6 pl12 bg-lightRed" placeholder="0912-345-678">
-                <span class="fz16 mb8">電子郵件</span>
-                <input type="text" name="" id="" class="email fz16 mb16 ptb6 pl12 bg-lightRed" placeholder="example@email.com">
-                <span class="fz16 mb8 bg-lightRed">意見反應</span>
-                <input type="text" name="" id="" class="comment fz16 mb16 pt6 pb106 pl12 bg-lightRed" placeholder="請輸入您的意見">
+            <form action="#" class="w-50 flex-column ">
+                <label for="name" class="fz16 mb8">姓名</label>
+                <input type="text" name="name" id="name" class="name fz16 mb16 ptb6 pl12 bg-lightRed" placeholder="陳小明">
+                <label for="phone" class="fz16 mb8">聯絡電話</label>
+                <input type="tel" name="phone" id="phone" class="phone fz16 mb16 ptb6 pl12 bg-lightRed" placeholder="0912-345-678">
+                
+                <label for="email" class="fz16 mb8">電子郵件</label>
+                <input type="email" name="email" id="email" class="email fz16 mb16 ptb6 pl12 bg-lightRed" placeholder="example@email.com">
+
+                <label for="comment" class="fz16 mb8 ">意見反應</label>
+
+                <input type="textarea" name="comment" id="comment" class="comment fz16 mb16 pt6 pb106 pl12 bg-lightRed" placeholder="請輸入您的意見">
                 <div class="agree gap4 mb48">
-                    <input type="checkbox" id="">
-                    <span class="fz16">我同意隱私權策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
+                    <input type="checkbox" id="agree">
+                    <span class="fz16 w-50">我同意隱私權策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
                 </div>
+                <div class="d-flex"><button src="#" class="submit fz18 text-lightRed bg-Red ms-auto me-auto">確認送出</button></div>
             </form>
-            <button src="#" class="submit fz18 text-lightRed bg-Red">確認送出</button>
         </div>
     </section>
 

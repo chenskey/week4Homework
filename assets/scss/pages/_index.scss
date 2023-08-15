@@ -122,12 +122,30 @@
   }
 }
 
+
+
+
+.classicItem {
+  a {
+    h3 {
+      font-size: 48px;
+
+      @include pc() {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+
 @include pad() {
 
   .classicItem {
+
     img {
       width: 50%;
     }
+
   }
 }
 
@@ -155,7 +173,7 @@
 }
 
 
-@media(max-width:414px) {
+@include iphone() {
   .contact {
     .submit {
       padding: 16px 110px;
